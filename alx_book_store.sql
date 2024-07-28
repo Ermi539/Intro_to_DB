@@ -43,10 +43,3 @@ CREATE TABLE Order_Details (
     FOREIGN KEY (order_id) REFERENCES Orders(order_id),
     FOREIGN KEY (book_id) REFERENCES Books(book_id)
 );
-
--- Optionally, add indexes for performance optimization
-CREATE INDEX idx_book_author ON Books(author_id);
-CREATE INDEX idx_order_customer ON Orders(customer_id);
-CREATE INDEX idx_orderdetails_order ON Order_Details(order_id);
-CREATE INDEX idx_orderdetails_book ON Order_Details(book_id);
-
