@@ -6,7 +6,7 @@ SELECT
     COLUMN_KEY AS 'Key',
     EXTRA AS 'Extra Information'
 FROM 
-    information_schema.COLUMNS
+    INFORMATION_SCHEMA.COLUMNS
 WHERE 
     TABLE_SCHEMA = 'alx_book_store' 
     AND TABLE_NAME = 'Books'
