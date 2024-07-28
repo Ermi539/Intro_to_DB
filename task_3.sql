@@ -1,4 +1,5 @@
--- Use the database specified by the argument
--- The database name will be provided as an argument when running the script
+-- Use the alx_book_store database
+USE alx_book_store;
 
+-- List all tables in the database
 SHOW TABLES;
